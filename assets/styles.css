@@ -372,65 +372,103 @@ nav ul li a:hover {
 .article-detail .cta-button:hover {
   background-color: #003366;
 }
-/* Contact Section */
-#contact {
-  background-color: #f4f7fa;
-  padding: 4rem 2rem;
-  text-align: center;
-}
+/*Booking Section */
 
-#contact h2 {
-  font-size: 2.5rem;
-  color: #1a1a1a;
-  margin-bottom: 2rem;
-}
-
-form {
+#consultation-booking {
   max-width: 600px;
-  margin: 0 auto;
-  text-align: left;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: #fff;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.07);
+  font-family: "Segoe UI", sans-serif;
 }
 
-form label {
+#consultation-booking h2 {
+  font-size: 1.75rem;
+  color: #0a4d68;
+  margin-bottom: 0.5rem;
+}
+
+#consultation-booking p {
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 1.5rem;
+}
+
+#consultation-booking fieldset {
+  border: none;
+  margin-bottom: 1.5rem;
+}
+
+#consultation-booking legend {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: #0a4d68;
+}
+
+#consultation-booking label {
   display: block;
   font-weight: 600;
-  margin-bottom: 0.5rem;
+  margin-top: 1rem;
+  margin-bottom: 0.25rem;
   color: #333;
 }
 
-form input,
-form textarea {
+#consultation-booking input,
+#consultation-booking select,
+#consultation-booking textarea {
   width: 100%;
-  padding: 0.9rem;
+  padding: 0.6rem 0.75rem;
   border: 1px solid #ccc;
-  border-radius: 8px;
-  margin-bottom: 1.5rem;
+  border-radius: 0.5rem;
   font-size: 1rem;
-  font-family: inherit;
-  transition: border-color 0.3s ease;
+  box-sizing: border-box;
+  transition: border-color 0.3s;
 }
 
-form input:focus,
-form textarea:focus {
-  border-color: #007bff;
+#consultation-booking input:focus,
+#consultation-booking select:focus,
+#consultation-booking textarea:focus {
   outline: none;
+  border-color: #0a4d68;
 }
 
-form button {
-  background-color: #007bff;
-  color: #fff;
-  padding: 0.9rem 2rem;
-  border: none;
-  border-radius: 8px;
+#consultation-booking button {
+  padding: 0.75rem 1.5rem;
   font-size: 1rem;
+  background-color: #0a4d68;
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
   cursor: pointer;
+  margin-top: 1rem;
   transition: background-color 0.3s ease;
 }
 
-form button:hover {
-  background-color: #0056b3;
+#consultation-booking button:hover {
+  background-color: #09719b;
 }
 
+@media (max-width: 480px) {
+  #consultation-booking {
+    padding: 1rem;
+  }
+
+  #consultation-booking h2 {
+    font-size: 1.5rem;
+  }
+
+  #consultation-booking input,
+  #consultation-booking select,
+  #consultation-booking textarea {
+    font-size: 0.95rem;
+  }
+
+  #consultation-booking button {
+    width: 100%;
+  }
+}
 /* Social Links */
 .social-links {
   margin-top: 2rem;
