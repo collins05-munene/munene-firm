@@ -35,7 +35,6 @@ Preferred Date: ${date}
 Preferred Time: ${time}
 Additional Notes: ${notes || "N/A"}
   `;
-
   const encodedMessage = encodeURIComponent(message);
   const whatsappNumber = "254790342156"; // Kenya format: remove leading 0, add country code
 
